@@ -8,8 +8,9 @@
         document.body.appendChild(renderer.domElement);
     
     
-        camera.position.z = 60;
+        camera.position.z = 100;
         camera.position.y = 10;    
+        camera.position.x = 1;
     
         let loader = new THREE.TextureLoader();
 
@@ -77,7 +78,10 @@
     
         function loop(){
             requestAnimationFrame(loop);
-            //torus.rotation.x += 0.01;
+            //torus.rotation.x += 1.5;
+            //cylinder.rotation.z += 1.5;
+            //lathe1.rotation.z += 1.5;
+            //lathe.rotation.x += 1.5;
             renderer.render(scene, camera);
         }
     
